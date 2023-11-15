@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+  <title>Link States</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px;
+      margin-right: 10px;
+      background-color: lightsteelblue;
+      text-decoration: none;
+      color: black;
+    }
+
+    a:visited{
+      color:white;
+    }
+
+    a:hover {
+      background-color: lightcoral;
+    }
+
+    a:focus {
+      background-color: lightgoldenrodyellow;
+    }
+
+    a:active {
+      background-color: lightgreen;
+    }
+
+    #div1,
+    #div2 {
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    #div1:target {
+      background-color: lightseagreen;
+      color: white;
+    }
+
+    #div2:target {
+      color:white;
+      background-color:lightslategrey;
+      border: 10px dotted green;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#div1">Link 1</a>
+  <a href="#div2">Link 2</a>
+  
+  <br>
+
+  <div id="div1">Div 1</div>
+  <div id="div2">Div 2</div>
+
+</body>
+</html>
